@@ -41,4 +41,4 @@ artifacts:
 
 env:
   parameter-store:         
-    jwt-secret-new: "hello_jwt"
+    JWT_SECRET_NEW: helloJWT
