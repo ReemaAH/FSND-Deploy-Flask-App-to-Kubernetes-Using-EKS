@@ -33,6 +33,8 @@ phases:
 
   post_build:
     commands:
+      - echo $EKS_CLUSTER_NAME
+      - echo $EKS_KUBECTL_ROLE_ARN
       - docker push $REPOSITORY_URI:$TAG
       - aws eks update-kubeconfig --name $EKS_CLUSTER_NAME --role-arn $EKS_KUBECTL_ROLE_ARN
       - kubectl apply -f simple_jwt_api.yml 
