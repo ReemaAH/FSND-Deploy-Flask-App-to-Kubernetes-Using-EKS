@@ -41,4 +41,4 @@ artifacts:
 
 env:
   parameter-store:         
-    JWT_SECRET: vgfb75hgikdsndn3xvP7
+    JWT_SECRET_NEW: helloJWT
